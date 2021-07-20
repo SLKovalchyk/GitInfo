@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProText-Regular.ttf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToastView" customModule="ADS_App" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="4zx-53-NFa"/>
+                <outlet property="imageView" destination="B3T-ds-hCu" id="bQa-eQ-xdm"/>
+                <outlet property="titleLabel" destination="Dw0-eJ-KBt" id="da9-01-WQb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="672" height="88"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B3T-ds-hCu">
+                    <rect key="frame" x="15" y="0.0" width="137" height="88"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dw0-eJ-KBt">
+                    <rect key="frame" x="15" y="12" width="642" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="m8t-nk-899"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="14"/>
+                    <color key="textColor" name="mainBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="Dw0-eJ-KBt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="I0F-Cj-hSX"/>
+                <constraint firstAttribute="bottom" secondItem="B3T-ds-hCu" secondAttribute="bottom" id="IT9-eq-EoQ"/>
+                <constraint firstAttribute="bottom" secondItem="Dw0-eJ-KBt" secondAttribute="bottom" constant="12" id="Oxa-Ma-It2"/>
+                <constraint firstItem="B3T-ds-hCu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Pix-uA-I1W"/>
+                <constraint firstItem="B3T-ds-hCu" firstAttribute="centerY" secondItem="Dw0-eJ-KBt" secondAttribute="centerY" id="TH9-J3-etm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Dw0-eJ-KBt" secondAttribute="trailing" constant="15" id="cin-Ws-L7u"/>
+                <constraint firstItem="Dw0-eJ-KBt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="eu1-dd-e47"/>
+                <constraint firstItem="B3T-ds-hCu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="mA0-Ih-ymE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-23.188405797101453" y="-5.3571428571428568"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="mainBackgroundColor">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_GitInfo {
+  umbrella header "Pods-GitInfo-umbrella.h"
+
+  export *
+  module * { export * }
+}

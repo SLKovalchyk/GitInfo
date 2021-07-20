@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (5.4.3)
+  - IQKeyboardManagerSwift (6.5.6)
+  - Kingfisher (6.3.0)
+  - LGSideMenuController (3.1.1)
+  - ObjectMapper (4.2.0)
+  - SkyFloatingLabelTextField (4.0.0)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - Alamofire
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - LGSideMenuController
+  - ObjectMapper
+  - SkyFloatingLabelTextField
+  - SVProgressHUD
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - LGSideMenuController
+    - ObjectMapper
+    - SkyFloatingLabelTextField
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
+  LGSideMenuController: 04c679441ea9a9ba5df6a48a5b43b340a1d5caaa
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  SkyFloatingLabelTextField: 79ddc40e4ad59707fedbb48d605417aee48bb78a
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 04cf774b03e6d52fa0fdac5607c178693bdae0b4
+
+COCOAPODS: 1.10.1

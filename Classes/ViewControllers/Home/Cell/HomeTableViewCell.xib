@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="155" id="KGk-i7-Jjw" customClass="HomeTableViewCell" customModule="GitInfo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="155"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="155"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8uA-aA-Rpk">
+                        <rect key="frame" x="110" y="8" width="195" height="90"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repo Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBk-8F-Uwm">
+                                <rect key="frame" x="0.0" y="0.0" width="195" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7y-XT-OmA">
+                                <rect key="frame" x="0.0" y="32" width="195" height="23.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxI-6d-vWH">
+                                <rect key="frame" x="0.0" y="63.5" width="195" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ioQ-6w-mdB">
+                        <rect key="frame" x="31" y="106" width="258" height="32"/>
+                        <subviews>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBk-5o-e5z">
+                                <rect key="frame" x="0.0" y="0.0" width="86" height="32"/>
+                                <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="0" image="eye">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNv-GJ-ABc">
+                                <rect key="frame" x="86" y="0.0" width="86" height="32"/>
+                                <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="0" image="star">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFC-mQ-518">
+                                <rect key="frame" x="172" y="0.0" width="86" height="32"/>
+                                <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="0" image="fork">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="ewv-XU-dxc"/>
+                        </constraints>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mr4-Bv-fXb">
+                        <rect key="frame" x="15" y="15" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="6i6-GV-RwT"/>
+                            <constraint firstAttribute="width" constant="80" id="HUd-mK-uJG"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Mr4-Bv-fXb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="2gG-ck-EoX"/>
+                    <constraint firstItem="Mr4-Bv-fXb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="9Lm-LV-ECV"/>
+                    <constraint firstItem="8uA-aA-Rpk" firstAttribute="leading" secondItem="Mr4-Bv-fXb" secondAttribute="trailing" constant="15" id="Bou-Dg-t0b"/>
+                    <constraint firstAttribute="trailing" secondItem="8uA-aA-Rpk" secondAttribute="trailing" constant="15" id="Jh1-sg-NLd"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ioQ-6w-mdB" secondAttribute="bottom" constant="8" id="Lem-EP-RxK"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ioQ-6w-mdB" secondAttribute="trailing" constant="15" id="VGB-Cr-TFV"/>
+                    <constraint firstItem="ioQ-6w-mdB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="bgE-4y-zUz"/>
+                    <constraint firstItem="ioQ-6w-mdB" firstAttribute="top" secondItem="Mr4-Bv-fXb" secondAttribute="bottom" constant="11" id="lp6-vb-dcK"/>
+                    <constraint firstItem="ioQ-6w-mdB" firstAttribute="top" secondItem="8uA-aA-Rpk" secondAttribute="bottom" constant="8" id="nZm-8I-cn8"/>
+                    <constraint firstItem="8uA-aA-Rpk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="nzj-4p-feu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="authorNameLabel" destination="w7y-XT-OmA" id="EiK-eu-cvh"/>
+                <outlet property="dateLabel" destination="oxI-6d-vWH" id="Hez-dw-Ald"/>
+                <outlet property="forkButton" destination="nFC-mQ-518" id="cbm-kn-v5c"/>
+                <outlet property="logoImageView" destination="Mr4-Bv-fXb" id="XZd-ns-3dr"/>
+                <outlet property="nameLabel" destination="RBk-8F-Uwm" id="lgu-2P-GM1"/>
+                <outlet property="starButton" destination="PNv-GJ-ABc" id="DMZ-W0-e6S"/>
+                <outlet property="watchButton" destination="gBk-5o-e5z" id="0rk-nr-Z02"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="140.95982142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="eye" width="16" height="16"/>
+        <image name="fork" width="16" height="18"/>
+        <image name="star" width="16" height="16"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
