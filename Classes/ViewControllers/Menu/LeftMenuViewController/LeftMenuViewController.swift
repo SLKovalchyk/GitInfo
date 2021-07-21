@@ -68,7 +68,8 @@ final class LeftMenuViewController: BaseViewController {
         provider?.customParameters = [
             "allow_signup": "false"
         ]
-        provider?.getCredentialWith(nil) { credential, error in
+        provider?.getCredentialWith(nil) {[weak self] credential, error in
+            guard let self = self else { return }
             if error != nil {
                 SVProgressHUD.dismiss()
                 self.showToastError(message: error?.localizedDescription ?? "Error")
@@ -76,7 +77,8 @@ final class LeftMenuViewController: BaseViewController {
             }
             if let cred = credential {
                 let auth = Auth.auth()
-                auth.signIn(with: cred) { authResult, error in
+                auth.signIn(with: cred) { [weak self] authResult, error in
+                    guard let self = self else { return }
                     if error != nil {
                         SVProgressHUD.dismiss()
                     }
@@ -84,7 +86,8 @@ final class LeftMenuViewController: BaseViewController {
                     guard let oauthCredential = authResult?.credential as? OAuthCredential else { return }
                     let accessToken = oauthCredential.accessToken ?? ""
                     UserWorker.shared.sessionToken = accessToken
-                    UserWorker.shared.getUserInfo { result, userError in
+                    UserWorker.shared.getUserInfo { [weak self] result, userError in
+                        guard let self = self else { return }
                         SVProgressHUD.dismiss()
                         if let error = userError {
                             self.showToastError(message: error.localizedDescription)
