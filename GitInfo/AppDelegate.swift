@@ -7,6 +7,7 @@
 
 import UIKit
 import SVProgressHUD
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func configureLibs() {
+        FirebaseApp.configure()
         // disable-enable user action when spiner isON
         NotificationCenter.default.addObserver(self, selector: #selector(requestWillStart),
                                                name: NSNotification.Name.SVProgressHUDWillAppear,

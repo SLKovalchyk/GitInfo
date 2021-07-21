@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		946E204CC90AF946160901D4 /* Pods_GitInfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B450F9A93FD4D4C13561EA /* Pods_GitInfo.framework */; };
+		AD48B3D226A82A7700DA1D93 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD48B3D126A82A7700DA1D93 /* UserAPI.swift */; };
 		AD508A2C26A7766E00E92478 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = AD508A2B26A7766E00E92478 /* SnapshotTesting */; };
 		AD508A2D26A7776300E92478 /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD133DBE26A76ABD00D34C2D /* TestUtils.swift */; };
+		AD508A2F26A8203600E92478 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD508A2E26A8203600E92478 /* GoogleService-Info.plist */; };
 		ADF4C31226A572CE002A81B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF4C31126A572CE002A81B0 /* AppDelegate.swift */; };
 		ADF4C31B26A572D1002A81B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF4C31A26A572D1002A81B0 /* Assets.xcassets */; };
 		ADF4C31E26A572D1002A81B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF4C31C26A572D1002A81B0 /* LaunchScreen.storyboard */; };
@@ -76,7 +78,9 @@
 		6499FE4DEEA6807537F542D0 /* Pods_GitInfoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitInfoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B450F9A93FD4D4C13561EA /* Pods_GitInfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitInfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD133DBE26A76ABD00D34C2D /* TestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtils.swift; sourceTree = "<group>"; };
+		AD48B3D126A82A7700DA1D93 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
 		AD5089E026A7703200E92478 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AD508A2E26A8203600E92478 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ADF4C30E26A572CE002A81B0 /* GitInfo Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitInfo Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF4C31126A572CE002A81B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADF4C31A26A572D1002A81B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -212,6 +216,7 @@
 			children = (
 				ADF4C31126A572CE002A81B0 /* AppDelegate.swift */,
 				ADF4C31F26A572D1002A81B0 /* Info.plist */,
+				AD508A2E26A8203600E92478 /* GoogleService-Info.plist */,
 				ADF4C34126A5CDF7002A81B0 /* Resources */,
 			);
 			path = GitInfo;
@@ -505,6 +510,7 @@
 		ADF4C3C626A75E90002A81B0 /* UserWorker */ = {
 			isa = PBXGroup;
 			children = (
+				AD48B3D126A82A7700DA1D93 /* UserAPI.swift */,
 				ADF4C3C726A75EAD002A81B0 /* UserWorker.swift */,
 			);
 			path = UserWorker;
@@ -614,6 +620,7 @@
 				ADF4C3C026A74476002A81B0 /* Configuration-Test.plist in Resources */,
 				ADF4C31B26A572D1002A81B0 /* Assets.xcassets in Resources */,
 				ADF4C3BC26A72AA8002A81B0 /* RepositoryDetailsViewController.xib in Resources */,
+				AD508A2F26A8203600E92478 /* GoogleService-Info.plist in Resources */,
 				ADF4C39B26A62419002A81B0 /* ToastView.xib in Resources */,
 				ADF4C36926A60508002A81B0 /* LeftMenuViewController.xib in Resources */,
 				ADF4C35726A5FC92002A81B0 /* HomeViewController.xib in Resources */,
@@ -731,6 +738,7 @@
 				ADF4C31226A572CE002A81B0 /* AppDelegate.swift in Sources */,
 				ADF4C38726A616C8002A81B0 /* DateExtensions.swift in Sources */,
 				ADF4C36826A60508002A81B0 /* LeftMenuViewController.swift in Sources */,
+				AD48B3D226A82A7700DA1D93 /* UserAPI.swift in Sources */,
 				ADF4C37C26A6150E002A81B0 /* HomeTableViewCell.swift in Sources */,
 				ADF4C37526A60B07002A81B0 /* HomeSceneBuilder.swift in Sources */,
 				ADF4C39126A61FE6002A81B0 /* RepositoryAPI.swift in Sources */,

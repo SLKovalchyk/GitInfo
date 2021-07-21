@@ -37,11 +37,6 @@ final class RepositoryDetailsViewController: BaseViewController, UINavigationCon
         ownerAvatarImageView.addGestureRecognizer(tap)
         fillRepositoryData()
     }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-    }
     
     private func fillRepositoryData() {
         

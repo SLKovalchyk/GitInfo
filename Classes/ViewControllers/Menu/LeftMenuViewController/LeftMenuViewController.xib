@@ -23,18 +23,18 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TUc-Rc-eya">
-                    <rect key="frame" x="0.0" y="16" width="414" height="160"/>
+                    <rect key="frame" x="0.0" y="40" width="414" height="160"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aOI-Os-1OZ">
-                            <rect key="frame" x="15" y="15" width="120" height="120"/>
+                            <rect key="frame" x="15" y="15" width="80" height="80"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="120" id="evk-T8-E6f"/>
-                                <constraint firstAttribute="height" constant="120" id="j4Z-nd-JT8"/>
+                                <constraint firstAttribute="width" constant="80" id="evk-T8-E6f"/>
+                                <constraint firstAttribute="height" constant="80" id="j4Z-nd-JT8"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTm-l9-ql2">
-                            <rect key="frame" x="163" y="15" width="236" height="130"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <rect key="frame" x="123" y="15" width="276" height="80"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -42,12 +42,12 @@
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstItem="xTm-l9-ql2" firstAttribute="leading" secondItem="aOI-Os-1OZ" secondAttribute="trailing" constant="28" id="4rr-hF-K4z"/>
-                        <constraint firstItem="aOI-Os-1OZ" firstAttribute="top" secondItem="TUc-Rc-eya" secondAttribute="top" constant="15" id="Kju-8e-tmh"/>
                         <constraint firstAttribute="height" constant="160" id="OW6-cW-GUr"/>
                         <constraint firstItem="xTm-l9-ql2" firstAttribute="top" secondItem="TUc-Rc-eya" secondAttribute="top" constant="15" id="QK1-S8-tnd"/>
                         <constraint firstAttribute="trailing" secondItem="xTm-l9-ql2" secondAttribute="trailing" constant="15" id="VeT-yN-O09"/>
                         <constraint firstItem="aOI-Os-1OZ" firstAttribute="leading" secondItem="TUc-Rc-eya" secondAttribute="leading" constant="15" id="Vmp-hP-wrD"/>
-                        <constraint firstAttribute="bottom" secondItem="xTm-l9-ql2" secondAttribute="bottom" constant="15" id="Z0j-fg-7gB"/>
+                        <constraint firstItem="xTm-l9-ql2" firstAttribute="height" secondItem="aOI-Os-1OZ" secondAttribute="height" id="Yc0-u4-C1n"/>
+                        <constraint firstItem="aOI-Os-1OZ" firstAttribute="top" secondItem="TUc-Rc-eya" secondAttribute="top" constant="15" id="uNZ-Jr-H3F"/>
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdD-Sw-XDI" customClass="MyButton" customModule="GitInfo" customModuleProvider="target">
@@ -68,7 +68,7 @@
                 <constraint firstItem="pdD-Sw-XDI" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="2ll-I0-NKB"/>
                 <constraint firstItem="TUc-Rc-eya" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="CGW-DR-2A6"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="pdD-Sw-XDI" secondAttribute="bottom" constant="21" id="IKv-9R-xwb"/>
-                <constraint firstItem="TUc-Rc-eya" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="16" id="ii9-W7-hIR"/>
+                <constraint firstItem="TUc-Rc-eya" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="ii9-W7-hIR"/>
                 <constraint firstItem="TUc-Rc-eya" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="sHl-6y-4T7"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="103.79464285714285"/>

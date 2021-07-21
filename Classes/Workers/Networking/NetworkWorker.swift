@@ -12,6 +12,8 @@ final class NetworkWorker {
 
     var baseURLPath = ""
 
+    var sessionToken: String?
+    
     static let shared: NetworkWorker = {
         let instance = NetworkWorker()
         instance.baseURLPath = "https://api.github.com/"
@@ -19,8 +21,12 @@ final class NetworkWorker {
     }()
 
     func headers() -> HTTPHeaders {
-        return [.init(name: "Content-Type", value: "application/json"),
-                .init(name: "accept", value: "application/vnd.github.v3+json")]
+        var _headers: HTTPHeaders = [.init(name: "Content-Type", value: "application/json"),
+                        .init(name: "accept", value: "application/vnd.github.v3+json")]
+        if let token = sessionToken {
+            _headers["Authorization"] = "token \(token)"
+        }
+        return _headers
     }
 
     func networkRequest(path: String,

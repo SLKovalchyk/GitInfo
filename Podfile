@@ -13,6 +13,7 @@ def all_pods
     #Networking
     pod 'Alamofire'
     pod 'ObjectMapper'
+    pod 'Firebase/Auth'
     
     #Photo
     pod 'Kingfisher'
